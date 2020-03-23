@@ -196,7 +196,7 @@ return (object)array(
 
     // Application/Database Version
     'version' => (object)array(
-        'app' => '2.10.0-release',
-        'schema' => '2.9',
+        'app' => '3.0.0-beta',
+        'schema' => '3.0',
     ),
 );

@@ -33,7 +33,7 @@ switch ($config->version->app) {
         $schema = dirname(dirname(dirname(dirname(__DIR__)))) . '/sql/updates/v3.sql';
         $schema = "mysql -u{$config->mysql->username} -p{$config->mysql->password} {$config->mysql->database} < {$schema} > /dev/null 2>&1";
         $schema = shell_exec($schema);
-        syslog(LOG_INFO, "(SYSTEM)[INFO]: Event Scheduler Reset for 2.9");
-        $config->version->app = '2.10.0-release';
-        $notes .= '<li><strong>' . $config->version->app . '</strong> - ' . 'Support Lightning Tower & Upload Unknown Sensors';
+        syslog(LOG_INFO, "(SYSTEM)[INFO]: Database schema upgraded to 3.0");
+        $config->version->app = '3.0.0-beta';
+        $notes .= '<li><strong>' . $config->version->app . '</strong> - ' . 'Major update. Support all Atlas sensors. Framework updates. See release notes!';
 }
