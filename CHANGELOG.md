@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [[3.0.0]](https://www.acuparse.com/releases/v3-0-0/) - BETA
+
+### Added
+- Support all Atlas sensors
+
 ### Fixed
 
 - MySQL error handling.
