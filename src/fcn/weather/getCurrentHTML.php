@@ -275,10 +275,8 @@ function getCurrentHTML()
                     <div class="col">
                         <h1><i class="fas fa-lightbulb" aria-hidden="true"></i> Light:</h1>
                         <ul class="list-unstyled">
-                            <li><h3>Intensity:</h3> <?php
-                                echo $atlas->lightintensity_text; ?></li>
-                            <li><h3>Measured:</h3> <?php
-                                echo $atlas->measured_light_seconds; ?> Seconds</li>
+                            <li><h2><?= $atlas->lightintensity_text; ?></h2></li>
+                            <li><h3>Measured:</h3> <?= $atlas->measured_light_seconds; ?> Seconds</li>
                         </ul>
                     </div>
                 </div>
